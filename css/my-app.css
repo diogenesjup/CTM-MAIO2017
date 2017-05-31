@@ -1,0 +1,67 @@
+/* Your app custom files in this file */
+/* Tab bar icons */
+
+
+
+
+.btn-default{
+  background: #ccc;
+  color:#212121;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  border:none !important;
+  font-size: 1.15em;
+  text-decoration: none;
+}
+
+
+.btn-primary{
+  background: #1976D2;
+  color:#fff !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  border:none !important;
+  font-size: 1.15em;
+  text-decoration: none;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.form-group .btn-primary{
+  display: block;
+  width: 300px;
+}
+
+
+.navbar-inner, .toolbar-inner{
+  font-size: 1.12em;
+  padding-top: 2.5px;
+}
+
+.navbar-inner i, .toolbar-inner i{
+  font-size: 20px;
+}
+
+span.tabbar-label{
+  font-size: 14px !important;
+}
+
+
+.content-block h4{
+  padding-left: 15px;
+}
+
+.form-group .btn-primary{
+  font-size: 1em;
+  width: 100%;
+}

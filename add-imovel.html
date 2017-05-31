@@ -1,0 +1,406 @@
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Voltar</span></a></div>
+    <div class="center sliding">Adicionar dados Imóvel <small id="sequencial_mercant"></small></div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="about" class="page">
+    <div class="page-content" id="conteudoAddImovel">
+      <div class="content-block">
+        
+                 
+                 <!--
+                 <h4>INSCRIÇÃO DO IMÓVEL</h4>
+                 <br clear="both">
+                 <br clear="both">
+                 
+                 
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Distrito</label>
+                     <input type="text" id="distrito" class="form-control input-sm" placeholder="Distri" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Setor</label>
+                     <input type="text" id="setor" class="form-control input-sm" placeholder="Setor" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Quadra</label>
+                     <input type="text" id="quadra" class="form-control input-sm" placeholder="Quadra" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Face</label>
+                     <input type="text" id="face" class="form-control input-sm" placeholder="Face" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Lote</label>
+                     <input type="text" id="lote" class="form-control input-sm" placeholder="Lote" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Unid.</label>
+                     <input type="text" id="unidade" class="form-control input-sm" placeholder="Unid." />
+                 </div>
+                 -->
+
+
+                 <h4>LOGRADOURO DO IMÓVEL</h4>
+                 <br clear="both">
+                 <br clear="both">
+                 
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Nome do logradouro</label>
+                     <input type="text" id="logradouro" class="form-control input-sm" placeholder="Nome logradouro" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Número</label>
+                     <input type="text" id="numero" class="form-control input-sm" placeholder="Número" />
+                 </div>
+                 <br clear="both">
+
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Bairro</label>
+                     <input type="text" id="bairro" class="form-control input-sm" placeholder="bairro" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>CEP</label>
+                     <input type="text" id="cep" class="form-control input-sm" placeholder="cep" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Complemento</label>
+                     <input type="text" id="complemento" class="form-control input-sm" placeholder="Complemento" />
+                 </div>
+                 <br clear="both">
+
+
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Loteamento</label>
+                     <input type="text" id="loteamento" class="form-control input-sm" placeholder="Loteamento" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Quadra</label>
+                     <input type="text" id="quadro" class="form-control input-sm" placeholder="Quadra" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Lote</label>
+                     <input type="text" id="lote" class="form-control input-sm" placeholder="Lote" />
+                 </div>
+                 
+
+                 <!--
+                 <br clear="both">
+                 <br clear="both">
+                 <h4>MEDIDAS DO TERRENO</h4>
+                 <br clear="both">
+                 <br clear="both">
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Frente</label>
+                     <input type="text" id="frente" class="form-control input-sm" placeholder="Frente" />
+                     <br><button class="btn btn-primary btn-xs" onclick="localFrente()">capturar coordenada</button>
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Lateral Direita</label>
+                     <input type="text" id="lateralDireita" class="form-control input-sm" placeholder="Lateral Direita" />
+                     <br><button class="btn btn-primary btn-xs" onclick="localLatDir()">capturar coordenada</button>
+                 </div>
+                 <br clear="both">
+
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Lateral Esquerda</label>
+                     <input type="text" id="lateralEsquerda" class="form-control input-sm" placeholder="Lateral Esquerda" />
+                     <br><button class="btn btn-primary btn-xs" onclick="localLatEsq()">capturar coordenada</button>
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Fundos</label>
+                     <input type="text" id="fundos" class="form-control input-sm" placeholder="Fundos" onchange="//calcArea();" />
+                     <br><button class="btn btn-primary btn-xs" onclick="localFundos()">capturar coordenada</button>
+                 </div>
+                 <br clear="both">
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Área total (m²)</label>
+                     <input type="number" id="areaTotal" class="form-control input-sm" placeholder="Aguardando cálculos" disabled />
+                 </div>
+                -->
+
+
+
+                 <br clear="both">
+                 <br clear="both">
+                 <h4>CARACTERÍSTICAS DO TERRENO</h4>
+                 <br clear="both">
+                 <br clear="both">
+                 
+                 <!--
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Situação do terreno</label>
+                     <input type="text" id="situacao_terreno" class="form-control input-sm" placeholder="Situação do terreno" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Topografia</label>
+                     <input type="text" id="topografia" class="form-control input-sm" placeholder="Topografia" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Tipo de terreno</label>
+                     <input type="text" id="tipo_terreno" class="form-control input-sm" placeholder="Tipo de terreno" />
+                 </div>
+                 
+                 <br clear="both">
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Pedologia</label>
+                     <input type="text" id="pedologia" class="form-control input-sm" placeholder="Pedologia" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Limitação</label>
+                     <input type="text" id="limitacao" class="form-control input-sm" placeholder="Limitação" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Calçada</label>
+                     <input type="text" id="calcada" class="form-control input-sm" placeholder="Calçada" />
+                 </div>
+                 -->
+
+
+
+                <!--
+                  <br clear="both">
+                 <br clear="both">
+                 <h4>MEDIDAS DA EDIFICAÇÃO</h4>
+                 <br clear="both">
+                 <br clear="both">
+                 
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Frente</label>
+                     <input type="text" id="med_frente" class="form-control input-sm" placeholder="Frente" />
+                     <br><button class="btn btn-primary btn-xs" onclick="medElocalFrente()">capturar coordenada</button>
+                 </div>
+
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Latareal direita</label>
+                     <input type="text" id="med_lat_direita" class="form-control input-sm" placeholder="Lateral direita" />
+                     <br><button class="btn btn-primary btn-xs" onclick="medElocalLatDir()">capturar coordenada</button>
+                 </div>
+
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Lateral esquerda</label>
+                     <input type="text" id="med_lat_esque" class="form-control input-sm" placeholder="Lateral esquerda" />
+                     <br><button class="btn btn-primary btn-xs" onclick="medElocalLatEsq()">capturar coordenada</button>
+                 </div>
+
+
+                 
+                 <br clear="both">
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Fundos</label>
+                     <input type="text" id="med_fundos" class="form-control input-sm" onchange="//calcAreaEdificacao();" placeholder="Fundos" />
+                     <br><button class="btn btn-primary btn-xs" onclick="medElocalfundos()">capturar coordenada</button>
+                 </div>
+                 
+
+
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Área total</label>
+                     <input type="text" id="med_area" class="form-control input-sm" placeholder="Aguardando cálculos" disabled>
+
+                 </div>
+                 -->
+                 
+
+
+                <!--
+                 <br clear="both">
+                 <br clear="both">
+                 <h4>CARACTERÍSTICAS DA EDIFICAÇÃO</h4>
+                 <br clear="both">
+                 <br clear="both">
+                 
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Tipo da edificação</label>
+                    
+                     <select class="form-control" id="tipo_edificacao">
+                         <option value="">selecione uma opção</option>
+                         <option value="Terreno">Terreno</option>
+                         <option value="Residência">Residência</option>
+                         <option value="Comércio">Comércio</option>
+                         <option value="Público">Público</option>
+                         <option value="Igreja">Igreja</option>
+                     </select>
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Estado de conservação</label>
+                     <input type="text" id="estado_conservacao" class="form-control input-sm" placeholder="Estado de conservação" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Utilização da edificação</label>
+                     <input type="text" id="utilizacao_edificacao" class="form-control input-sm" placeholder="Utilização da edificação" />
+                 </div>
+                
+                -->
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Situação do terreno</label>
+                     <select class="form-control" required id="newsituacaoTerreno" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Esquina">Esquina</option>
+                         <option value="Meio quadra">Meio quadra</option>
+                     </select>
+                 </div>
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Topografia</label>                     
+                     <select class="form-control" required id="newtopografia" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Plano">Plano</option>
+                         <option value="Declive">Declive</option>
+                         <option value="Eclive">Eclive</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Tipo Terreno</label>                     
+                     <select class="form-control" required id="newTipoTerreno" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Regular">Regular</option>
+                         <option value="Irregular">Irregular</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Limitação</label>                     
+                     <select class="form-control" required id="newLimitação" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Murado">Murado</option>
+                         <option value="Sem muro">Sem muro</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Calçada</label>                     
+                     <select class="form-control" required id="newCalçada" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Sim">Sim</option>
+                         <option value="Não">Não</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Coleta Lixo</label>                     
+                     <select class="form-control" required id="newColetaLixo" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Sim">Sim</option>
+                         <option value="Não">Não</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Limpeza publica</label>                     
+                     <select class="form-control" required id="newLimpezapublica" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Sim">Sim</option>
+                         <option value="Não">Não</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Calçamento</label>                     
+                     <select class="form-control" required id="newCalçamento" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Sim">Sim</option>
+                         <option value="Não">Não</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Rede esgoto</label>                     
+                     <select class="form-control" required id="newRedeesgoto" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Próprio">Próprio</option>
+                         <option value="Alugado">Alugado</option>
+                     </select>
+                 </div>
+
+
+                 <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                     <label>Classificação construção</label>                     
+                     <select class="form-control" required id="newClassificaçãoconstrução" class="form-control">
+                         <option value="">selecione</option>
+                         <option value="Luxo">Luxo</option>
+                         <option value="Boa">Boa</option>
+                         <option value="Média">Média</option>
+                         <option value="Simples">Simples</option>
+                         <option value="Prevária">Prevária</option>
+                     </select>
+                 </div>
+
+
+                 <br clear="both">
+                 <br clear="both">
+                 <h4>INFORMAÇÕES DO PROPRIETÁRIO</h4>
+                 <br clear="both">
+                 <br clear="both">
+                 
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>Nome do proprietário</label>
+                     <input type="text" id="nome_proprietario" class="form-control input-sm" placeholder="Nome do proprietário" />
+                 </div>
+                 <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                     <label>CPF / CNPJ</label>
+                     <input type="text" id="cpf_cnpj" class="form-control input-sm" placeholder="Número do CPF / CNPJ" />
+                 </div>
+                
+                <!--
+
+                 <br clear="both">
+                 <br clear="both">
+
+                -->
+                
+
+
+                <!-- <h4>FOTOS DO IMÓVEL</h4>
+
+                 
+
+                 <div class="form-group col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                    <label>Tirar fotos do imóvel</label>
+                    <button class="btn btn-default" style="width: 100%;" onclick="alert('Camêra do Tablet não pode ser localizada');">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      tirar fotos do imóvel
+                    </button>
+                 </div>
+
+                -->  
+                
+                <input type="hidden" id="acao" value="I">
+
+                 <br clear="both">
+                 <br clear="both">
+
+                
+                 <div class="form-group col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                     <button class="btn btn-primary" style="width:100% !important;" onclick="salvarImovel();"><i class="fa fa-floppy-o" aria-hidden="true"></i> salvar</button>
+                 </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

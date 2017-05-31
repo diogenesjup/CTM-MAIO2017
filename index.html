@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>CPM Mercantil</title>
+
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="dist/css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <style type="text/css">
+      html,body{
+        height: 100% !important;
+      }
+    </style>
+
+    
+  </head>
+<body>
+  
+
+    <div class="page-content">
+      <div class="content-block" style="text-align: center;">
+        
+        <p style="text-center;"><b>v 3 - MAIO2017</b></p>
+        <p style="text-center;"><img src="images/logo.jpg"></p>
+        <p style="text-center;"><button href="#" class="btn-default open-login-screen">Entrar na aplicação</button></p>
+      
+      </div>
+    </div>
+  
+
+  <div class="login-screen">
+    <div class="view">
+      <div class="page">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">CTM consultoria Pública</div>
+          
+            <div class="list-block">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Login</div>
+                    <div class="item-input">
+                      <input type="text" name="username" id="loginInput" placeholder="Seu login">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Senha</div>
+                    <div class="item-input">
+                      <input type="password" name="password" id="senhaInput" autocomplete="new-password" placeholder="Sua senha">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Grupo</div>
+                    <div class="item-input">
+                      <input type="text" name="grupo" id="grupoUser" autocomplete="new-password" placeholder="Nome do seu grupo de atuação">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list-block">
+              <ul>
+                <li><button id="login" class="btn-primary item-link list-button">Login</button></li>
+              </ul>
+              <div class="list-block-label">
+                <p>Apenas colaboradores CTM podem ter acesso a essa aplicação</p>
+                <p><a href="#" class="close-login-screen">Fechar tela de login</a></p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="dist/js/framework7.min.js"></script>
+    
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+
+      </body>
+</html>
