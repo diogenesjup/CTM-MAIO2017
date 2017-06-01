@@ -382,12 +382,12 @@ function salvarImovel(){
    // CARREGAR VALORES
 
          // DESATIVADOS
-         var distrito = 99;
-         var setor = 99;
-         var quadra = 99;
-         var face = 99;
-         var lote = 99;
-         var unidade = 99;
+          var distrito = $("#distrito").val();
+           var setor = $("#setor").val();
+           var quadra = $("#quadra").val();
+           var face = $("#face").val();
+           var lote = $("#lote").val();
+           var unidade = $("#unidade").val();
    
    var logradouro = $("#logradouro").val();
    var numero = $("#numero").val();
@@ -399,27 +399,27 @@ function salvarImovel(){
    var lote = $("#lote").val();
 
        // DESATIVADOS
-       var frente = 99;
-       var lateralDireita = 99;
-       var lateralEsquerda = 99;
-       var fundos = 99;
-       var areaTotal = 99;
-       var situacao_terreno = 99;
-       var topografia = 99;
-       var tipo_terreno = 99;
-       var pedologia = 99;
-       var limitacao = 99;
-       var calcada = 99;
-       var med_frente = 99;
-       var med_lat_direita = 99;
-       var med_lat_esque = 99;
-       var med_fundos = 99;
-       var med_area_unidade = 99;
-       var med_area = 99;
-       var tipo_edificacao = 99;
-       var estado_conservacao = 99;
-       var utilizacao_edificacao = 99;  
-   
+       var frente = $("#frente").val();
+   var lateralDireita = $("#lateralDireita").val();
+   var lateralEsquerda = $("#lateralEsquerda").val();
+   var fundos = $("#fundos").val();
+   var areaTotal = $("#areaTotal").val();
+
+       var situacao_terreno = $("#situacao_terreno").val();
+   var topografia = $("#topografia").val();
+   var tipo_terreno = $("#tipo_terreno").val();
+   var pedologia = $("#pedologia").val();
+   var limitacao = $("#limitacao").val();
+   var calcada = $("#calcada").val();
+   var med_frente = $("#med_frente").val();
+   var med_lat_direita = $("#med_lat_direita").val();
+   var med_lat_esque = $("#med_lat_esque").val();
+   var med_fundos = $("#med_fundos").val();
+   var med_area_unidade = $("#med_area_unidade").val();
+   var med_area = $("#med_area").val();
+   var tipo_edificacao = $("#tipo_edificacao").val();
+   var estado_conservacao = $("#estado_conservacao").val();
+   var utilizacao_edificacao = $("#utilizacao_edificacao").val();
 
    // NOVOS CAMPOS
    var newsituacaoTerreno = $("newsituacaoTerreno").val();
@@ -1074,7 +1074,7 @@ function sincronia(){
        var med_area = 999;
        var tipo_edificacao = 999;
        var estado_conservacao = 999;
-       var estado_conservacao = 999;
+       var utilizacao_edificacao = 999;
 
        var newsituacaoTerreno = 999;
        var newtopografia = 999;
@@ -1128,7 +1128,7 @@ function sincronia(){
            med_area = localStorage.getItem("imovel_med_area["+flag+"]");
            tipo_edificacao = localStorage.getItem("imovel_tipo_edificacao["+flag+"]");
            estado_conservacao = localStorage.getItem("imovel_estado_conservacao["+flag+"]");
-           estado_conservacao = localStorage.getItem("imovel_utilizacao_edificacao["+flag+"]");
+           utilizacao_edificacao = localStorage.getItem("imovel_utilizacao_edificacao["+flag+"]");
          
            // NOVOS DADOS
            newsituacaoTerreno = localStorage.getItem("newsituacaoTerreno["+flag+"]");
@@ -1183,7 +1183,7 @@ function sincronia(){
                     med_area: med_area,
                     tipo_edificacao: tipo_edificacao,
                     estado_conservacao: estado_conservacao,
-                    estado_conservacao: estado_conservacao,
+                    utilizacao_edificacao: utilizacao_edificacao,
                     newsituacaoTerreno: newsituacaoTerreno,
                     newtopografia: newtopografia,
                     newTipoTerreno: newTipoTerreno,
