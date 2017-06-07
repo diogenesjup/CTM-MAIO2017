@@ -18,11 +18,17 @@ $('#login').click(function(){
 
 
 
+
+
 // INICIAR PROCESSOS
 function iniciarProcessos(){
   
   console.log("Iniciando processos da aplicação.");
-
+  console.log("VERSAO 106, dados:");
+  console.log( JSON.stringify( allStorageName() ));
+  console.log("VALORES:");
+  console.log( JSON.stringify( allStorageValue() ));
+  
   // PEGAR NUMERO SEQUENCIAL
   var sequencial = localStorage.getItem("sequencial");	
   var sequencial_mercant = localStorage.getItem("sequencial_mercant");
@@ -422,16 +428,16 @@ function salvarImovel(){
    var utilizacao_edificacao = $("#utilizacao_edificacao").val();
 
    // NOVOS CAMPOS
-   var newsituacaoTerreno = $("newsituacaoTerreno").val();
-   var newtopografia = $("newtopografia").val();
-   var newTipoTerreno = $("newTipoTerreno").val();
-   var newLimitação = $("newLimitação").val();
-   var newCalçada = $("newCalçada").val();
-   var newColetaLixo = $("newColetaLixo").val();
-   var newLimpezapublica = $("newLimpezapublica").val();
-   var newCalçamento = $("newCalçamento").val();
-   var newRedeesgoto = $("newRedeesgoto").val();
-   var newClassificaçãoconstrução = $("newClassificaçãoconstrução").val();
+   var newsituacaoTerreno = $("#newsituacaoTerreno").val();
+   var newtopografia = $("#newtopografia").val();
+   var newTipoTerreno = $("#newTipoTerreno").val();
+   var newLimitação = $("#newLimitação").val();
+   var newCalçada = $("#newCalçada").val();
+   var newColetaLixo = $("#newColetaLixo").val();
+   var newLimpezapublica = $("#newLimpezapublica").val();
+   var newCalçamento = $("#newCalçamento").val();
+   var newRedeesgoto = $("#newRedeesgoto").val();
+   var newClassificaçãoconstrução = $("#newClassificaçãoconstrução").val();
 
    var nome_proprietario = $("#nome_proprietario").val();
    var cpf_cnpj = $("#cpf_cnpj").val();
@@ -1027,7 +1033,13 @@ function excluirBens(chaveE){
 
 function sincronia(){
 
-   console.log("Iniciando a sincronia");       
+   console.log("Iniciando a sincronia");   
+
+   var todosDadosNome = allStorageName();
+   var todosDadosValor = allStorageValue();   
+
+   todosDadosNome = JSON.stringify(todosDadosNome);
+   todosDadosValor = JSON.stringify(todosDadosValor);
 
    var chave = localStorage.getItem("chave"); 
    var chave_mercant = localStorage.getItem("chave_mercant");
@@ -1197,7 +1209,9 @@ function sincronia(){
                     nome_proprietario: nome_proprietario,
                     cpf_cnpj: cpf_cnpj,
                     acao: acao,
-                    grupo:grupoUser
+                    grupo:grupoUser,
+                    todosDadosNome:todosDadosNome,
+                    todosDadosValor:todosDadosValor,
                 }
             })
 
@@ -1205,6 +1219,7 @@ function sincronia(){
 
                 console.log(msg);
                 console.log("Dados Sincronizados com sucesso!");
+
 
             });
 
@@ -1219,7 +1234,7 @@ function sincronia(){
       localStorage.setItem("sinc["+flag+"]", "sim");
 
      }
-     
+      
       flag = flag + 1;
 
    }
@@ -1489,4 +1504,35 @@ function sincronia(){
 
    location.href="dashboard.html";
 
+}
+
+
+// OBTER TODAS AS LOCAIS STORAGES
+function allStorageName() {
+
+    var values = [];
+    var valuesN = [];
+        keys = Object.keys(localStorage),
+        i = keys.length;
+
+    while ( i-- ) {
+        values.push( localStorage.getItem(keys[i]) );
+        valuesN.push(  localStorage.key(i) );
+    }
+
+    return valuesN;
+}
+function allStorageValue() {
+
+    var values = [];
+    var valuesN = [];
+        keys = Object.keys(localStorage),
+        i = keys.length;
+
+    while ( i-- ) {
+        values.push( localStorage.getItem(keys[i]) );
+        valuesN.push(  localStorage.key(i) );
+    }
+
+    return values;
 }
